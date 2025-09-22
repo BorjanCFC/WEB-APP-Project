@@ -1,3 +1,4 @@
+```plaintext
 # 🛒 OnlineStore
 
 **OnlineStore** is a simple PHP-based e-commerce application built using the MVC (Model-View-Controller) architecture.  
@@ -6,65 +7,57 @@ It provides basic functionality for browsing products, managing a shopping cart,
 ---
 
 ## 📂 Project Structure
-```plaintext
+
 ONLINESTORE/
-├── app/                          # Core application folder, MVC logic
-│   ├── controllers/              # Controllers handle user requests
+├── app/ core application folder, containing the MVC (Model–View–Controller) logic.
+│   ├── controllers/ Controllers handle user requests, call the right model to fetch or update data, and then load the correct view.
 │   │   ├── AboutUsController.php
 │   │   ├── AuthController.php
 │   │   ├── CartController.php
 │   │   ├── HomeController.php
 │   │   ├── ProductController.php
 │   │   └── SaleController.php
-│   │
-│   ├── core/                     # Framework base ("engine" of the system)
+│   ├── core/ Contains the framework base (the “engine” of the MVC system).
 │   │   ├── App.php
 │   │   ├── Controller.php
 │   │   ├── Database.php
 │   │   └── Model.php
-│   │
-│   ├── models/                   # Models interact with the database
-│   │   ├── Cart.php
-│   │   ├── HomeModel.php
-│   │   └── Product.php
-│   │
-│   └── views/                    # Presentation layer (HTML + PHP templates)
-│       ├── auth/                 # Authentication views
-│       │   ├── forgot_password.php
-│       │   ├── login.php
-│       │   ├── profile.php
-│       │   ├── register.php
-│       │   ├── resetPassword.php
-│       │   └── verifyCode.php
-│       │
-│       ├── layouts/              # Reusable layout components
-│       │   ├── footer.php
-│       │   └── header.php
-│       │
-│       ├── AboutUs.php           # About Us page
-│       ├── Cart.php              # Shopping cart page
-│       ├── Category.php          # Product category pages
-│       ├── Home.php              # Homepage
-│       └── Sale.php              # Sale page
-│
-├── config/                       # Configuration files
-│   ├── config.php                # Application configuration
-│   └── Database.php              # Database configuration
-│
-├── includes/                     # Helper classes/utilities
-│   ├── EmailSender.php           # Email sending functionality
-│   └── PHPMailer/                # PHPMailer library for SMTP
-│
-├── public/                       # Public web root (browser accessible)
-│   ├── css/                      # Stylesheets
+│   └── models/ Models interact with the database.
+│       ├── Cart.php
+│       ├── HomeModel.php
+│       └── Product.php
+├── views/ This folder contains the presentation layer (HTML + PHP templates).
+│   ├── auth/
+│   │   ├── forgot_password.php
+│   │   ├── login.php
+│   │   ├── profile.php
+│   │   ├── register.php
+│   │   ├── resetPassword.php
+│   │   └── verifyCode.php
+│   └── layouts/
+│   │   ├── footer.php
+│   │   ├── header.php
+│   ├── AboutUs.php
+│   ├── Cart.php
+│   ├── Category.php
+│   ├── Home.php
+│   └── Sale.php
+├── config/ Configuration files for the application.
+│   ├── config.php
+│   └── Database.php
+├── includes/ Contains helper classes/utilities that don’t belong strictly to MVC.
+│   └── EmailRender.php
+├── PHPMailer/ Third-party library for sending emails via SMTP.
+├── public/ The public web root – the only folder directly accessible from the browser.
+│   ├── css/
 │   │   └── style.css
-│   ├── images/                   # Static images
-│   ├── js/                       # JavaScript files
+│   ├── images/
+│   ├── js/
 │   │   └── main.js
-│   ├── index.php                 # Front controller
-│   └── .htaccess                 # Apache rewrite rules for clean URLs
-│
-└── README.md                     # Project documentation
+│   └── index.php
+│   └── .htaccess Apache rewrite rules. Ensures clean URLs
+└── .htaccess
+└── README.md Project documentation.
 
 ---
 
