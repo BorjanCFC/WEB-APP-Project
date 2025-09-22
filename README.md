@@ -8,64 +8,63 @@ It provides basic functionality for browsing products, managing a shopping cart,
 ## 📂 Project Structure
 
 ONLINESTORE/
-├── app/                     # Core application folder, MVC logic
-│   ├── controllers/         # Controllers handle user requests
-│   │   ├── AboutUsController.php
-│   │   ├── AuthController.php
-│   │   ├── CartController.php
-│   │   ├── HomeController.php
-│   │   ├── ProductController.php
-│   │   └── SaleController.php
-│   │
-│   ├── core/                # Framework base ("engine" of the system)
-│   │   ├── App.php
-│   │   ├── Controller.php
-│   │   ├── Database.php
-│   │   └── Model.php
-│   │
-│   ├── models/              # Models interact with the database
-│   │   ├── Cart.php
-│   │   ├── HomeModel.php
-│   │   └── Product.php
-│   │
-│   └── views/               # Presentation layer (HTML + PHP templates)
-│       ├── auth/
-│       │   ├── forgot_password.php
-│       │   ├── login.php
-│       │   ├── profile.php
-│       │   ├── register.php
-│       │   ├── resetPassword.php
-│       │   └── verifyCode.php
-│       │
-│       ├── layouts/
-│       │   ├── footer.php
-│       │   └── header.php
-│       │
-│       ├── AboutUs.php
-│       ├── Cart.php
-│       ├── Category.php
-│       ├── Home.php
-│       └── Sale.php
+├── app/ # Core application folder, MVC logic
+│ ├── controllers/ # Controllers handle user requests
+│ │ ├── AboutUsController.php
+│ │ ├── AuthController.php
+│ │ ├── CartController.php
+│ │ ├── HomeController.php
+│ │ ├── ProductController.php
+│ │ └── SaleController.php
+│ │
+│ ├── core/ # Framework base ("engine" of the system)
+│ │ ├── App.php
+│ │ ├── Controller.php
+│ │ ├── Database.php
+│ │ └── Model.php
+│ │
+│ ├── models/ # Models interact with the database
+│ │ ├── Cart.php
+│ │ ├── HomeModel.php
+│ │ └── Product.php
+│ │
+│ └── views/ # Presentation layer (HTML + PHP templates)
+│ ├── auth/
+│ │ ├── forgot_password.php
+│ │ ├── login.php
+│ │ ├── profile.php
+│ │ ├── register.php
+│ │ ├── resetPassword.php
+│ │ └── verifyCode.php
+│ │
+│ ├── layouts/
+│ │ ├── footer.php
+│ │ └── header.php
+│ │
+│ ├── AboutUs.php
+│ ├── Cart.php
+│ ├── Category.php
+│ ├── Home.php
+│ └── Sale.php
 │
-├── config/                  # Configuration files
-│   ├── config.php
-│   └── Database.php
+├── config/ # Configuration files
+│ ├── config.php
+│ └── Database.php
 │
-├── includes/                # Helper classes/utilities
-│   ├── EmailRender.php
-│   └── PHPMailer/
+├── includes/ # Helper classes/utilities
+│ ├── EmailRender.php
+│ └── PHPMailer/
 │
-├── public/                  # Public web root (accessible to browser)
-│   ├── css/
-│   │   └── style.css
-│   ├── images/
-│   ├── js/
-│   │   └── main.js
-│   ├── index.php
-│   └── .htaccess            # Apache rewrite rules
+├── public/ # Public web root (accessible to browser)
+│ ├── css/
+│ │ └── style.css
+│ ├── images/
+│ ├── js/
+│ │ └── main.js
+│ ├── index.php
+│ └── .htaccess # Apache rewrite rules
 │
-└── README.md                # Project documentation
-
+└── README.md # Project documentation
 
 ---
 
