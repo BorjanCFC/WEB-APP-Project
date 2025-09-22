@@ -6,7 +6,7 @@ It provides basic functionality for browsing products, managing a shopping cart,
 ---
 
 ## 📂 Project Structure
-
+```plaintext
 ONLINESTORE/
 ├── app/                          # Core application folder, MVC logic
 │   ├── controllers/              # Controllers handle user requests
